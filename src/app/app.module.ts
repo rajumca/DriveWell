@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: 'speed', component: SpeedComponent },
-   { path: 'home', component: HomeComponent }
+   { path: '', component: HomeComponent }
   ];
 
 @NgModule({
