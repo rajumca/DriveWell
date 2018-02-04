@@ -9,9 +9,27 @@ td{
 table.speedLimit{
 	
 	text-align:center;
-	margin-top:2%;
-	margin-left:35%
+	margin-top:5%;
+/* 	 margin: 0 auto; */
+/* 	margin-left:40% */
 }
 td.speedLimitValue{
 	font-weight: bold
+}
+
+.speed{
+	
+	 border-radius: 100%;
+/*     behavior: url(PIE.htc); remove if you don't care about IE8 */
+border-color: green;
+    width: 40%;
+    height: 40%;
+    padding: 2%;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: green;
+    text-align: center;
+
+    font: 100px Arial, sans-serif;
 }

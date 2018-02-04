@@ -16,7 +16,8 @@ speed: Speed =  {
   longitude: 0,
   speedLimit: 50,
   speedMessage: '',
-  elements: []
+  elements: [],
+  road: ''
 };
   constructor(private speedLimitService: SpeedLimitService) { }
 
@@ -25,12 +26,13 @@ speed: Speed =  {
         this.speed= {
           id: 1,
   speed : 70,
-  location: speed.elements[0].tags['tiger:name_base'] + ', ' + speed.elements[0].tags['tiger:county'] ,
+  location:  speed.elements[0].tags['tiger:county'] ,
   lattitude: 0,
   longitude: 0,
   speedLimit:  speed.elements[0].tags.maxspeed,
   speedMessage: '',
-  elements: []
+  elements: [],
+  road: speed.elements[0].tags['tiger:name_base']
         });
   }
   ngOnInit() {

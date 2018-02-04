@@ -1,24 +1,20 @@
 
-<!-- <table >
-<tr><td>Location</td><td><input [(ngModel)]="speed.location"  type="text" > </td> </tr>
-<tr><td>Longitude</td><td><input type="text" > </td> </tr>
-<tr><td>Speed limit</td><td><input [(ngModel)]="speed.speedLimit"  type="text" > </td> </tr>
-<tr><td>Zone</td><td><input type="text" > </td> </tr>
-<tr><td>Weather Condition</td><td><input type="text" > </td> </tr>
-<tr><td>Your Speed</td><td><input [(ngModel)]="speed.speed" placeholder="Your Speed"> </td> </tr>
-</table> -->
+
 
 <div style="text-align:center">
-<!-- <h2> Speed: {{speed.speed}} MPH </h2> -->
-<!-- <h2>Speed Limit: {{speed.speedLimit}}</h2> -->
-<!-- <h2>Location: {{speed.location}}</h2> -->
+<span class="speed">{{speed.speed}}</span> MPH
+ <h3> Your Speed  </h3> 
 
+<div>
 <table class="speedLimit" >
-<tr><td>Location:</td><td class="speedLimitValue">{{speed.location}} </td> </tr>
-<!-- <tr><td>Longitude</td><td><input type="text" > </td> </tr> -->
 <tr><td>Speed Limit: </td><td class="speedLimitValue">{{speed.speedLimit}} </td> </tr>
 <!-- <tr><td>Zone</td><td><input type="text" > </td> </tr> -->
 <!-- <tr><td>Weather Condition</td><td><input type="text" > </td> </tr> -->
 <tr><td>Your Speed: </td><td class="speedLimitValue">{{speed.speed}}</td> </tr>
+<tr><td>Road:</td><td class="speedLimitValue">{{speed.road}} </td> </tr>
+<tr><td>Location:</td><td class="speedLimitValue">{{speed.location}} </td> </tr>
+<!-- <tr><td>Longitude</td><td><input type="text" > </td> </tr> -->
+
 </table>
+</div>
 </div>

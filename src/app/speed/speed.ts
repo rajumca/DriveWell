@@ -7,4 +7,5 @@ export class Speed {
   speedMessage: string;
   location: string;
   elements: Element[];
+  road: string;
 }
