@@ -1,19 +1,20 @@
 
 
 
-<div style="text-align:center">
-<span class="speed">{{speed.speed}}</span> MPH
- <h3> Your Speed  </h3> 
+<div style="speedDiv">
+<span [class]="speed.styleClass">{{speed.speed}}</span> MPH
+ <h3 id="yourSpeed"> Your Speed  </h3> 
 
 <div>
+
+<div>
+<button class="accelerateButton" (click)="accelerate()">Accelerate</button>
+</div>
 <table class="speedLimit" >
-<tr><td>Speed Limit: </td><td class="speedLimitValue">{{speed.speedLimit}} </td> </tr>
-<!-- <tr><td>Zone</td><td><input type="text" > </td> </tr> -->
-<!-- <tr><td>Weather Condition</td><td><input type="text" > </td> </tr> -->
-<tr><td>Your Speed: </td><td class="speedLimitValue">{{speed.speed}}</td> </tr>
+<tr><td>Speed Limit: </td><td class="speedLimitValue">{{speed.speedLimit}}  MPH</td> </tr>
+<tr><td>Your Speed: </td><td class="speedLimitValue">{{speed.speed}}  MPH</td> </tr>
 <tr><td>Road:</td><td class="speedLimitValue">{{speed.road}} </td> </tr>
 <tr><td>Location:</td><td class="speedLimitValue">{{speed.location}} </td> </tr>
-<!-- <tr><td>Longitude</td><td><input type="text" > </td> </tr> -->
 
 </table>
 </div>

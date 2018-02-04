@@ -8,4 +8,5 @@ export class Speed {
   location: string;
   elements: Element[];
   road: string;
+  styleClass: string;
 }
