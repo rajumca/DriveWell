@@ -1,0 +1,26 @@
+.banner{
+background-color:#0654d3;
+height: 25%;
+/* width: 50%; */
+/* text-align: center; */
+vertical-align: middle;
+
+}
+
+h1 {
+	color:white;
+/*   color: #369; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  margin-right:0%;
+  display:inline;
+}
+
+
+
+
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}

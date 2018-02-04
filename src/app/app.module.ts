@@ -3,16 +3,34 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SpeedLimitService } from './speed/speed-limit.service';
+import { SpeedComponent } from './speed/speed.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
+const appRoutes: Routes = [
+  { path: 'speed', component: SpeedComponent },
+   { path: 'home', component: HomeComponent }
+  ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SpeedComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SpeedLimitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

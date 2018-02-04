@@ -1,0 +1,17 @@
+table{
+	text-align: center;
+	
+}
+td{
+	text-align:left;
+}
+
+table.speedLimit{
+	
+	text-align:center;
+	margin-top:2%;
+	margin-left:35%
+}
+td.speedLimitValue{
+	font-weight: bold
+}
