@@ -47,7 +47,9 @@ export class SpeedComponent implements OnInit, OnChanges {
 
   accelerate() {
     this.speed.speed++;
-    if (this.speed.speed > 5 + parseInt(this.speed.speedLimit)) {
+    if (this.speed.speed > 10 + parseInt(this.speed.speedLimit)) {
+      this.speed.styleClass = 'dangerousSpeed';
+    } else if (this.speed.speed > 5 + parseInt(this.speed.speedLimit)) {
       this.speed.styleClass = 'overSpeed';
     } else if (this.speed.speed > this.speed.speedLimit) {
       this.speed.styleClass = 'maxSpeed';

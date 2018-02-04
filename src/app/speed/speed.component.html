@@ -3,12 +3,12 @@
 
 <div style="speedDiv">
 <span [class]="speed.styleClass">{{speed.speed}}</span> MPH
- <h3> Your Speed  </h3> 
+ <h3 id="yourSpeed"> Your Speed  </h3> 
 
 <div>
 
 <div>
-<button (click)="accelerate()">Accelerate</button>
+<button class="accelerateButton" (click)="accelerate()">Accelerate</button>
 </div>
 <table class="speedLimit" >
 <tr><td>Speed Limit: </td><td class="speedLimitValue">{{speed.speedLimit}}  MPH</td> </tr>

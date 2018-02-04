@@ -16,9 +16,13 @@ table.speedLimit{
 td.speedLimitValue{
 	font-weight: bold
 }
+h3#yourSpeed{
+	margin-top: 3%
+}
 .speedDiv{
 	
 	margin-top: 3%;
+	margin-bottom:3%
 }
 .normalSpeed{
 	margin-top: 5%;
@@ -71,4 +75,31 @@ td.speedLimitValue{
     text-align: center;
 
     font: 100px Arial, sans-serif;
+}
+
+.dangerousSpeed{
+	color: #990910;
+	margin-top: 5%;
+	 border-radius: 100%;
+/*     behavior: url(PIE.htc); remove if you don't care about IE8 */
+	border-color: green;
+    width: 40%;
+    height: 40%;
+    padding: 2%;
+
+    background: #fff;
+    border: 2px solid #666;
+/*     color: green; */
+    text-align: center;
+
+    font: 100px Arial, sans-serif;
+}
+
+.accelerateButton{
+	height:50px;
+	width:150px;
+	background-color: #3975e5;
+	border-radius: 19px;
+	font-family: sans-serif;
+	font-weight: bold;
 }
