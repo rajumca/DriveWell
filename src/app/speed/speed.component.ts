@@ -7,7 +7,7 @@ import {SpeedLimitService} from './speed-limit.service';
   providers: [SpeedLimitService],
   styleUrls: ['./speed.component.css']
 })
-export class SpeedComponent implements OnInit, OnChanges {
+export class SpeedComponent implements OnInit {
   speed: Speed = {
     id: 1,
     speed: 70,
@@ -21,13 +21,6 @@ export class SpeedComponent implements OnInit, OnChanges {
     styleClass: 'normalStyle'
   };
   constructor(private speedLimitService: SpeedLimitService) {}
-
-  ngOnChanges(changes: SimpleChanges) {
-    if (this.speed.speed > this.speed.speedLimit) {
-      this.speedStyle = 'overSpeed';
-      alert(this.speed.speed);
-    }
-  }
 
   getSpeedLimit(): void {
     this.speedLimitService.getSpeedLimt().subscribe(speed =>
