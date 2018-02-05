@@ -1,6 +1,6 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { SpeedLimitSeviceService } from './speed-limit-sevice.service';
+import { SpeedLimitSeviceService } from './speed-limit.service';
 
 describe('SpeedLimitSeviceService', () => {
   beforeEach(() => {
